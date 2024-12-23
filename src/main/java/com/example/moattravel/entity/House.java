@@ -51,6 +51,7 @@ public class House {
 		
 		// ゲッターとセッターをマニュアルセット
 		//Id
+		
 		public Integer getId() {
 		    return id;
 		}
