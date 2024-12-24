@@ -17,7 +17,8 @@ public class HouseRegisterForm {
 	@NotBlank(message = "説明を入力して下さい。")
 	private String description;
 	
-	@NotNull(message = "宿泊料金は１円以上に設定して下さい")
+	@NotNull(message = "宿泊料金を入力して下さい")
+	@Min(value = 1, message = "宿泊料金は1円以上に設定して下さい。")
 	private Integer price;
 	
 	@NotNull(message = "定員を入力して下さい。")
