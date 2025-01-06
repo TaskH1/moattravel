@@ -1,0 +1,26 @@
+package com.example.moattravel.event;
+
+import org.springframework.context.ApplicationEvent;
+import com.example.moattravel.entity.User;
+import lombok.Getter;
+
+@Getter
+public class SignupEvent extends ApplicationEvent {
+	private User user;
+	public User getUser() {
+		return user;
+	}
+	
+	private String requestUrl;
+	public String getRequestUrl() {
+		return requestUrl;
+	}
+	
+	public SignupEvent(Object source, User user, String requestUrl) {
+		super(source);
+		this.user =user;
+		this.requestUrl = requestUrl;
+	}
+		
+	
+}
