@@ -59,7 +59,7 @@ public class Reservation {
 	@Column(name = "checkout_date")
 	private LocalDate checkoutDate;
 	public LocalDate getCheckoutDate() {
-		return checkinDate;
+		return checkoutDate;
 	}
 	public void setCheckoutDate(LocalDate checkoutDate) {
 		this.checkoutDate = checkoutDate;
